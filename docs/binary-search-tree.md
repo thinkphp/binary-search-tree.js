@@ -14,7 +14,9 @@ An implementation Binary Search Tree in MooTools Framework
 BinarySearchTree Method: add {#BinarySearchTree: add}
 -----------------------------------------------------------
 
-Inserts the specfied value into the binary search tree
+Appends the data to the appropriate node in the binary search tree. 
+If there are no nodes in the binary search tree, then the tree is empty root is NULL
+so the value becames the root, otherwise search in the binary search tree to find out the appropriate node to insert.
 
 ### Syntax: tree.add( data );
 
@@ -30,7 +32,7 @@ Inserts the specfied value into the binary search tree
 BinarySearchTree Method: delete {#BinarySearchTree: delete}
 -----------------------------------------------------------
 
-Inserts the specfied value into the binary search tree.
+Removes the node with the given value from the binary search tree.
 There are three possible cases to consider:
 * deleting a leaf (a node with no children)
 * deleting a node with one child.
@@ -40,7 +42,7 @@ There are three possible cases to consider:
 
 ### Arguments:
 
-- data - the specified data value to delete.
+- data - the specified data value to remove.
 
 ### Returns:
 
@@ -50,23 +52,23 @@ There are three possible cases to consider:
 BinarySearchTree Method: search {#BinarySearchTree: search}
 -----------------------------------------------------------
 
-Searching a binary search tree for a specific key using iterative process.
+Determines whether the given value exists or not in the binary search tree using an iterative process.
 
-### Syntax: tree.search( val );
+### Syntax: tree.search( value );
 
 ### Arguments:
 
-- val `object` \`Integer` \ `float` \ `mixed`  the specified value to search.
+- value the specified value to search.
 
 ### Returns:
 
-- returns `True`
+- returns Bool (True/False) or (0/1)
 
 
 BinarySearchTree Method: size {#BinarySearchTree: size}
 -----------------------------------------------------------
 
-Get the length of the binary search tree.
+Gets the number of the items in the binary search tree
 
 ### Syntax: tree.size();
 
@@ -76,13 +78,13 @@ Get the length of the binary search tree.
 
 ### Returns:
 
-- returns `size` the length of the binary search tree
+- returns `size` the number of nodes in the tree.
 
 
 BinarySearchTree Method: inorder {#BinarySearchTree: inorder}
 -----------------------------------------------------------
 
-Traversal Inorder
+Traverses the binary search tree inorder.
 
 ### Syntax: tree.inorder()
 
@@ -92,13 +94,13 @@ Traversal Inorder
 
 ### Returns:
 
-- returns `True`
+- returns Array (returns an array with the nodes of the binary search tree arranged in inorder)
 
 
 BinarySearchTree Method: preorder {#BinarySearchTree: preorder}
 ---------------------------------------------------------------
 
-Traversal Preorder
+Traverses the binary search tree preorder.
 
 ### Syntax: tree.preorder()
 
@@ -108,14 +110,14 @@ Traversal Preorder
 
 ### Returns:
 
-- returns `True`
+- returns Array (returns an array with the nodes of the binary search tree arranged in preorder)
 
 BinarySearchTree Method: postorder {#BinarySearchTree: postorder}
 -----------------------------------------------------------------
 
-Traversal Postorder
+Traverses the binary search tree postorder.
 
-### Syntax: tree.Postorder()
+### Syntax: tree.postorder()
 
 ### Arguments:
 
@@ -123,9 +125,24 @@ Traversal Postorder
 
 ### Returns:
 
-- returns `True`
+- returns Array (returns an array with the nodes of the binary search tree arranged in postorder)
+
+BinarySearchTree Method: toString {#BinarySearchTree: toString}
+-----------------------------------------------------------------
 
 
+
+### Syntax: tree.toString()
+
+Converts the array into a string representation.
+
+### Arguments:
+
+- void
+
+### Returns:
+
+- returns String representation.
 
 
 # Sample: 
