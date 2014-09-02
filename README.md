@@ -43,8 +43,8 @@ When DOM is ready:
 
    #JS
 
-   //create an object BinarySearchTree
-   var tree = new BinarySearchTree();
+       //create an object BinarySearchTree
+       var tree = new BinarySearchTree();
 
        //add elements onto the tree
        tree.add(8);   
