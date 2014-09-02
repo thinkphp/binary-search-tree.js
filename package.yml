@@ -2,6 +2,6 @@ name: binary-search-tree
 author: thinkphp
 current: v1.0
 category: Utilities
-tags: [binary-search-tree, binary-tree-search,data-structures]
-docs: 
-demo: 
+tags: [binary-search-tree, binary-tree-search, data-structures]
+docs: https://github.com/thinkphp/binary-search-tree.js/blob/master/docs/binary-search-tree.md
+demo: http://thinkphp.ro/apps/js-hacks/binary-search-tree.js/demos/binary-search-tree.html
