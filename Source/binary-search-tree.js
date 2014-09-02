@@ -30,6 +30,11 @@ var BinarySearchTree = new Class({
                           this._root = null;  
                       },
 
+                    /*
+                    Appends the data to the appropriate node in the binary search tree. 
+                    If there are no nodes in the binary search tree, then the tree is empty root is NULL
+                    so the value becames the root, otherwise search in the binary search tree to find out the appropriate node to insert.
+                    */
                       add: function( val ) {
 
                            if(this._root == null) {
@@ -78,6 +83,9 @@ var BinarySearchTree = new Class({
                             
                       },
 
+/*
+Determines whether the given value exists or not in the binary search tree using an iterative process.
+*/
                       search: function( val ) {
 
                               var found = 0, curr = this._root;
@@ -214,7 +222,13 @@ var BinarySearchTree = new Class({
 
                           return this.inorder().toString() 
                       },
-
+/*
+Removes the node with the given value from the binary search tree.
+There are three possible cases to consider:
+* deleting a leaf (a node with no children)
+* deleting a node with one child.
+* deleting a node with two children
+*/
                       delete: function( val ) {
 
                               var curr = this._root,
