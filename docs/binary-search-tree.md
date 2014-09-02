@@ -5,7 +5,7 @@ An implementation Binary Search Tree in MooTools Framework
 
 ### Syntax:
 
-    var myTree = new BinarySearchTree();
+    var tree = new BinarySearchTree();
 
 ### Arguments:
 
@@ -16,11 +16,11 @@ BinarySearchTree Method: add {#BinarySearchTree: add}
 
 Inserts the specfied value into the binary search tree
 
-### Syntax: myTree.add( val );
+### Syntax: tree.add( data );
 
 ### Arguments:
 
-- val `object` \`Integer` \ `float` \ `mixed`  the specified value to append.
+- data - the specified data to insert.
 
 ### Returns:
 
@@ -36,11 +36,11 @@ There are three possible cases to consider:
 * deleting a node with one child.
 * deleting a node with two children
 
-### Syntax: myTree.delete( val );
+### Syntax: tree.delete( data );
 
 ### Arguments:
 
-- val `object` \`Integer` \ `float` \ `mixed`  the specified value to delete.
+- data - the specified data value to delete.
 
 ### Returns:
 
@@ -52,7 +52,7 @@ BinarySearchTree Method: search {#BinarySearchTree: search}
 
 Searching a binary search tree for a specific key using iterative process.
 
-### Syntax: myTree.search( val );
+### Syntax: tree.search( val );
 
 ### Arguments:
 
@@ -68,15 +68,15 @@ BinarySearchTree Method: size {#BinarySearchTree: size}
 
 Get the length of the binary search tree.
 
-### Syntax: myTree.search( val );
+### Syntax: tree.size();
 
 ### Arguments:
 
-- val `object` \`Integer` \ `float` \ `mixed`  the specified value to search.
+- void
 
 ### Returns:
 
-- returns `size`
+- returns `size` the length of the binary search tree
 
 
 BinarySearchTree Method: inorder {#BinarySearchTree: inorder}
@@ -84,7 +84,7 @@ BinarySearchTree Method: inorder {#BinarySearchTree: inorder}
 
 Traversal Inorder
 
-### Syntax: myTree.inorder()
+### Syntax: tree.inorder()
 
 ### Arguments:
 
@@ -96,11 +96,11 @@ Traversal Inorder
 
 
 BinarySearchTree Method: preorder {#BinarySearchTree: preorder}
------------------------------------------------------------
+---------------------------------------------------------------
 
-Traversal Inorder
+Traversal Preorder
 
-### Syntax: myTree.preorder()
+### Syntax: tree.preorder()
 
 ### Arguments:
 
@@ -111,11 +111,11 @@ Traversal Inorder
 - returns `True`
 
 BinarySearchTree Method: postorder {#BinarySearchTree: postorder}
------------------------------------------------------------
+-----------------------------------------------------------------
 
 Traversal Postorder
 
-### Syntax: myTree.Postorder()
+### Syntax: tree.Postorder()
 
 ### Arguments:
 
